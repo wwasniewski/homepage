@@ -100,12 +100,12 @@ textarea {
 /* general */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Helvetica, serif;
   font-size: 18px;
   margin: 10px auto;
 }
 
-header, section {
+header, section, footer {
     max-width: 550px;
     margin: auto;
 }
@@ -149,7 +149,7 @@ figure {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 figure img {
@@ -218,7 +218,6 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 
@@ -226,34 +225,22 @@ li {
   width: 40%;
   max-width: 200px;
   margin: auto;
-  float: left;
+  float: right;
   padding: 20px;
 }
 
+/* footer */
 
-/* media */
+footer {
+text-align: center;
+padding-top: 50px;
+font-size: 0.8em;
+}
 
-
-@media screen and (min-width: 550px) {
-  body {
-    font-size: 22px;
-    margin: 60px auto;
-  }
-
-  .profile {
-    width: 240px;
-    height: 240px;
-    margin-bottom: 20px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  #certifications {
-  }
+footer li {
 
 }
+
 
 
 
@@ -353,6 +340,27 @@ li {
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
+}
+
+  @media only screen and (min-width: 550px) {
+    body {
+      font-size: 22px;
+      margin: 60px auto;
+    }
+
+    .profile {
+      width: 240px;
+      height: 240px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+  #certifications {
+  }
+
 }
 
 
