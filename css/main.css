@@ -120,8 +120,12 @@ section {
 
 
 a {
-  color: navy;
+  color: #a90707;
   text-decoration: none;
+}
+
+#learner a {
+  color: navy;
 }
 
 a:hover {
