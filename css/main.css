@@ -138,6 +138,10 @@ h1 {
   text-align: center;
 }
 
+h1 a {
+  color: inherit;
+}
+
 h2 {
   margin-top: 60px;
 }
@@ -214,6 +218,16 @@ li {
   margin-right: -50vw;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.sticky + section {
+  padding-top: 37px;
+}
 
 /* section specific */
 
@@ -231,6 +245,11 @@ li {
   margin: auto;
   float: right;
   padding: 20px;
+}
+
+#scrollup {
+  display: none;
+  text-align: center;
 }
 
 /* footer */
@@ -362,6 +381,13 @@ footer li {
       font-size: 2em;
     }
 
+#scrollup {
+  display:block;
+}
+
+#graduation {
+  padding-bottom: 30px;
+}
   #certifications {
   }
 

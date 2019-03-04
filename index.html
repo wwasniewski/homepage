@@ -27,7 +27,9 @@
     <header id="intro">
       <div class="stacked">
           <img src="img/profile.jpg" alt="Wojciech Wasniewski's profile picture" class="profile">
-          <h1>Wojciech Waśniewski</h1>
+          <div id="title">
+            <h1><a href="#">Wojciech Waśniewski</a></h1>
+          </div>
         </div>
       <h3>Hi!</h3>
       <p>I am a <a  href="#coach">golf coach</a>, <a  href="#edugolf">founder of EduGolf.pl</a>, <a  href="#cd">coach developer</a>,  <a  href="#learner">learner</a>,
@@ -42,8 +44,12 @@
         </ul>
         <p><i>Last updated: March 2019</i></p><br>
     </header>
-      <img src="img/2.jpeg" alt="Wojciech at graduation ceremony" style="full-width">
+      <div id="graduation">
+        <img src="img/2.jpeg" alt="Wojciech at graduation ceremony" style="full-width">
+      </div>
+      <div id="scrollup"><a href="#">### back to top ###</a></div>
       <section id="main-1">
+
         <div id="coach">
           <h2>Golf Coach</h2>
           Working as:
@@ -340,6 +346,26 @@
             &copy; Wojciech Waśniewski
 					</footer>
         </div>
+
+  <script>
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("scrollup");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
